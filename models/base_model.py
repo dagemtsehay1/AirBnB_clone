@@ -10,17 +10,15 @@ class BaseModel:
     
     def __init__(self, *args, **kwargs):
         """Initializing the BaseModel"""
+        self.id = str(uuid4())
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
         if kwargs:
             for k, v in kwargs.items():
                 if k == "created_at" or k == "updated_at":
-                    setattr(self, k, datetime.strptime(v, "%Y-%m-%dT%H:%M:%S.%f"))
+                    self.__dict__[k] = datetime.strptime(v, "%Y-%m-%dT%H:%M:%S.%f"))
                 else:
-                    setattr(self, k, v)
-        else:
-            self.id = str(uuid4())
-            self.created_at = datetime.now()
-            self.updated_at = datetime.now()
-            models.storage.new(self)
+                    self.__dict__[k] = v
             
     def __str__(self):
         """Prints  [<class name>] (<self.id>) <self.__dict__>"""
