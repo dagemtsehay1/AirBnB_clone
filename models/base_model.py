@@ -1,5 +1,6 @@
-0;136;0c0;136;0c#!/usr/bin/python3
+#!/usr/bin/python3
 """This module contains the prototype for BaseModel class."""
+import models
 from uuid import uuid4
 from datetime import datetime
 
