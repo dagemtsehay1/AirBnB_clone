@@ -21,3 +21,8 @@ class BaseModel:
             self.created_at = datetime.utcnow()
             self.updated_at = datetime.utcnow()
             models.storage.new(self)
+            
+    def __str__(self):
+        """Prints  [<class name>] (<self.id>) <self.__dict__>"""
+        class_name = self.__class__.__name__
+        return "[{}] ({}) {}".format(class_name, self.id, self.__dict__)
