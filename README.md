@@ -17,5 +17,5 @@ The command interpreter is currently capable of:
 - Destroy an object
 
 ### Authors
-* Asmamaw Yismaw | [GitHub](https://github.com/asmeyb) |
+* Asmamaw Yismaw Baylie | [GitHub](https://github.com/asmeyb) |
 * Dagem Tsehay | [GitHub](https://github.com/dagemtsehay1) |
