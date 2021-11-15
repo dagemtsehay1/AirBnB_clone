@@ -6,7 +6,7 @@
 
 This is the first part of a project for Holberton School(ALX(The Room) SE): AirBnB clone - The console. First step: Write a command interpreter to manage the AirBnB objects.
 
-### The command interpreter
+## The command interpreter
 
 The command interpreter is currently capable of:
 
@@ -16,6 +16,46 @@ The command interpreter is currently capable of:
 - Update attributes of an object
 - Destroy an object
 
-### Authors
+## Execution
+
+this shell works like this in interactive mode:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+
+But also in non-interactive mode
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+
+## Authors
 * Asmamaw Yismaw Baylie | [GitHub](https://github.com/asmeyb) |
 * Dagem Tsehay | [GitHub](https://github.com/dagemtsehay1) |
